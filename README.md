@@ -23,7 +23,7 @@ func getFakeID() string {
 	return string(result)
 }
 func getUrl(ip, port string) []string {
-	path := "if5ax/?fakeid=" + getFakeID() + "&spid=81117&pid=81117&spip=" + ip + "&spport=" + port
+	path := "if5ax/?fakeid=" + getFakeID() + "&spid=31117&pid=31117&spip=" + ip + "&spport=" + port
 	host := "http://dir.wo186.tv:809/"
 	m := md5.Sum([]byte(path + "3d99ff138e1f41e931e58617e7d128e2"))
 	key := hex.EncodeToString(m[:])
